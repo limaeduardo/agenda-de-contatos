@@ -1,13 +1,8 @@
-<<<<<<< HEAD
 # agenda-de-contatos
-=======
-# roubank-app
->>>>>>> develop
 
 Este projeto tem como objetivo implementar uma agenda de contatos
 
 # Endereço de Deploy - GitHub Pages
-
 
 
 # Protótipo
