@@ -12,27 +12,39 @@
       (ngSubmit)="onSubmit()"
     >
       <div class="row">
-        <label for="icon_prefix">Nome</label>
+        <label for="icon_prefix">Nome *</label>
         <div class="input-field col s12">
-
           <i class="material-icons prefix">account_circle</i>
           <input
             id="name-input"
             name="name-input"
             type="text"
-            [(ngModel)]="this.contact.name">
-
+            [(ngModel)]="this.contact.name"
+            pattern="^(\s?[A-zÀ-ú]*)"
+            #name="ngModel"
+            required>
+            <div class="red-text" [hidden]="name.valid || name.untouched">
+              Por favor, informe o seu nome do contato.
+            </div>
         </div>
       </div>
       <div class="row">
-        <label for="icon_telephone">Telefone</label>
+        <label for="icon_telephone">Telefone *</label>
         <div class="input-field col s12">
           <i class="material-icons prefix">phone</i>
           <input
             id="phone-input"
             name="phone-input"
-            type="text"
-            [(ngModel)]="this.contact.phone"/>
+            type="tel"
+            class="validate"
+            [(ngModel)]="this.contact.phone"
+            pattern="[0-9]*"
+            #phone="ngModel"
+            required
+            >
+            <div class="red-text" [hidden]="phone.valid || phone.untouched">
+              Por favor, informe o telefone do contato.
+            </div>
         </div>
       </div>
 
@@ -51,5 +63,10 @@
         </div>
       </div>
     </form>
+  </div>
+  <div class="row">
+    <div class="col s12 m6 offset-m3 center">
+      <a routerLink=""> VOLTAR AO MENU PRINCIPAL </a>
+    </div>
   </div>
 </div>

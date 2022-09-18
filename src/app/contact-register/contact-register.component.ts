@@ -26,7 +26,7 @@ export class ContactRegisterComponent implements OnInit {
   }
 
   onSubmit(){
-    this.dataService.contactList.push({id:this.dataService.contactList.length+1,name:this.contact.name,phone:this.contact.phone});
+    this.dataService.save({id:0,name:this.contact.name,phone:this.contact.phone})
     this.modal.show = true;
     this.modal.title = 'Cadastro';
     this.modal.text = `O contato ` + this.contact.name + ` foi cadastrado com sucesso` ;

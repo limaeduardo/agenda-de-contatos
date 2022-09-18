@@ -21,10 +21,12 @@ export class ContactsDetailsComponent implements OnInit {
     });
 
     if(this.dataService.contactList.length == 0){
-      alert('Não foram encontrado contatos cadastrados');
       this.router.navigate(['/contatos']);
     }
 
+    if(contacts.length == 0){
+      this.router.navigate(['/contatos']);
+    }
     this.contact = contacts[0];
   }
 }

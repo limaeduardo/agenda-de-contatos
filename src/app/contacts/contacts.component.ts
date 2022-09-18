@@ -19,4 +19,8 @@ export class ContactsComponent implements OnInit {
     console.log(t?.id)
     this.router.navigate(['/contatos/detalhes', t?.id]);
   }
+  onDelete(id: number){
+    this.dataService.delete(id);
+    this.router.navigate(['/contatos']);
+  }
 }
