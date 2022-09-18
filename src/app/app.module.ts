@@ -1,3 +1,4 @@
+import { PhonePipe } from './pipes/phone.pipe';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { DataService } from './service/dataService';
@@ -25,13 +26,14 @@ import { HttpClientModule } from '@angular/common/http'
     LandPageComponent,
     ContactsComponent,
     ContactsDetailsComponent,
-    ModalComponent
+    ModalComponent,
+    PhonePipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [
     DataService

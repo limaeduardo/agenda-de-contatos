@@ -9,11 +9,11 @@
       </li>
       <li class="collection-item">
         <span class="badge left">NOME</span
-        >{{ this.contact.name }}
+        >{{ this.contact.name | titlecase}}
       </li>
       <li class="collection-item">
         <span class="badge left">TELEFONE</span
-        >{{ this.contact.phone }}
+        >{{ this.contact.phone | phonepipe }}
       </li>
     <!--
       <li class="collection-item">

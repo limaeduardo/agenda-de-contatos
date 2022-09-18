@@ -1,4 +1,4 @@
-import { TransactionPromiseService } from './../service/transaction-promisse.service';
+import { TransactionPromiseService } from '../service/contacts-promisse.service';
 import { DataService } from './../service/dataService';
 import { Contact } from './../model/Contact';
 import { Injectable } from '@angular/core';

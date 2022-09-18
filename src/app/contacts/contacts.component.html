@@ -42,8 +42,8 @@
             (click)="onClickItem(t)"
           >
             <td>{{ t.id }}</td>
-            <td>{{ t.name }}</td>
-            <td>{{ t.phone | uppercase }}</td>
+            <td>{{ t.name | titlecase}}</td>
+            <td>{{ t!.phone! | phonepipe}}</td>
             <td class="right">
               <a
                 ><i
