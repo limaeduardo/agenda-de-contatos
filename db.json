@@ -1,0 +1,24 @@
+{
+  "contacts": [
+    {
+      "id": 1,
+      "name": "json-server",
+      "phone": "41998745074"
+    },
+    {
+      "id": 3,
+      "name": "uuuu",
+      "phone": "42322"
+    },
+    {
+      "id": 4,
+      "name": "teste",
+      "phone": "6665"
+    },
+    {
+      "id": 5,
+      "name": "Asas",
+      "phone": "32232"
+    }
+  ]
+}

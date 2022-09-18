@@ -1,0 +1,35 @@
+<div class="container contact">
+  <h5>Contato</h5>
+  <h6>Dados do contato</h6>
+  <hr />
+  <div class="row">
+    <ul class="collection col s12 offset-m3 m6">
+      <li class="collection-item">
+        <span class="badge left">IDENTIFICADOR</span>{{ this.contact.id }}
+      </li>
+      <li class="collection-item">
+        <span class="badge left">NOME</span
+        >{{ this.contact.name | titlecase}}
+      </li>
+      <li class="collection-item">
+        <span class="badge left">TELEFONE</span
+        >{{ this.contact.phone | phonepipe }}
+      </li>
+    <!--
+      <li class="collection-item">
+        <span class="badge left">TIPO</span
+        >AAAA
+      </li>
+      <li class="collection-item">
+        <span class="badge left">DATA</span>
+        BBB
+      </li>
+    -->
+    </ul>
+  </div>
+  <div class="row">
+    <div class="col s12 m6 offset-m3 center">
+      <a routerLink="/contatos"> VOLTAR AO MENU PRINCIPAL </a>
+    </div>
+  </div>
+</div>
