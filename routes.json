@@ -1,0 +1,4 @@
+{
+  "/contatos" : "/contacts",
+  "/contatos/:id" : "/contacts/:id"
+}

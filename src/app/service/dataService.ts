@@ -44,7 +44,17 @@ export class DataService{
     if(this.contactList == null || this.contactList.length == 0){
       return 1;
     } else {
+      let a = this.contactList[this.contactList.length-1].id;
       return this.contactList[this.contactList.length-1].id + 1;
     }
+  }
+
+  all():Contact[]{
+    return WebStorageUtil.get(Constants.CONTACTS_KEY);
+  }
+
+  saveAll(c: Contact[]){
+    WebStorageUtil.set(Constants.CONTACTS_KEY,c);
+    this.contactList = c;
   }
 }
